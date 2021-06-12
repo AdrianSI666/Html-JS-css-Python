@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolioApp">
+<head>
+  <title>Adrian Sledz</title>
+  <meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Bodoni+Moda&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <script src="js/jquery.min.js"></script>
+  <link href="style.css" rel="stylesheet">
+  <script src="forms.js"></script>
+  <script src="angular.min.js"></script>
+  <script src="controllers.js"></script>
+</head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container pull-right">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" ariaexpanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="logo"></a>
+        </div>
+        <div class="collapse navbar-collapse float-end pull-right justify-content-right" id="navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#main-page" class="btn btn-primary"><span class="glyphicon glyphicon-home"></span>Strona główna</a></li>
+            <li><a href="#galeria" class="btn btn-primary"><span class="glyphicon glyphicon-th"></span>Galeria</a></li>
+            <li><a href="#kontakt" class="btn btn-primary"><span class="glyphicon glyphicon-envelope"></span>Kontakt</a></li>
+            <li><a href="#" class="btn btn-primary"><span class="glyphicon glyphicon-alert"></span>Dobre życie</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div id="carouselID" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselID" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselID" data-slide-to="1"></li>
+            <li data-target="#carouselID" data-slide-to="2"></li>
+            <li data-target="#carouselID" data-slide-to="3"></li>
+            <li data-target="#carouselID" data-slide-to="4"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="z1.jpg" alt="Sztuka zrobiona przez WLOP">
+              <div class="carousel-caption">Sztuka zrobiona przez WLOP</div>
+            </div>
+            <div class="item">
+              <img src="z2.jpg" alt="Sztuka zrobiona przez WLOP">
+              <div class="carousel-caption">Sztuka zrobiona przez WLOP</div>
+            </div>
+            <div class="item">
+              <img src="z3.jpg" alt="Sztuka zrobiona przez WLOP">
+              <div class="carousel-caption">Sztuka zrobiona przez WLOP</div>
+            </div>
+            <div class="item">
+              <img src="z4.jpg" alt="Sztuka zrobiona przez WLOP">
+              <div class="carousel-caption">Sztuka zrobiona przez WLOP</div>
+            </div>
+            <div class="item">
+              <img src="z5.jpg" alt="Sztuka zrobiona przez WLOP">
+              <div class="carousel-caption">Sztuka zrobiona przez WLOP</div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carouselID" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" ariahidden="true"></span>
+            <span class="sr-only">Poprzedni</span>
+          </a>
+          <a class="right carousel-control" href="#carouselID" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" ariahidden="true"></span>
+              <span class="sr-only">Następny</span>
+          </a>
+        </div>
+      </div>
+    </header>
+    <section id="main-page" class="jumbotron">
+      <div class="container">
+        <span class="glyphicon glyphicon-tower"></span>
+        <h1>Pierwsza sekcja strony!</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam quis metus risus. Duis ultricies nibh quis porttitor condimentum. Quisque vulputate, turpis nec tempor aliquet, ex lacus volutpat dolor, aliquam malesuada orci leo sit amet mauris. Quisque congue nunc orci, placerat vulputate enim placerat nec. Donec non ante imperdiet, hendrerit eros porttitor, tempor elit. Donec lobortis neque quis lacus ullamcorper aliquam. Integer mattis ante nec turpis scelerisque, quis auctor sapien mollis. Fusce eget eros vestibulum leo suscipit pulvinar ut vel quam. Quisque elementum ipsum ut eros malesuada cursus eget sollicitudin nulla. Nullam bibendum elementum diam, non mattis urna fringilla vel. Mauris ornare imperdiet tortor, sagittis luctus nisl molestie eget.
+          Donec orci risus, semper vitae convallis sit amet, viverra eu dolor. Phasellus libero magna, molestie sit amet accumsan vitae, volutpat at felis. Vestibulum sollicitudin lacinia ultricies. Vivamus volutpat ipsum sit amet risus laoreet porta. Vestibulum congue dignissim sapien, finibus tempus urna congue at. Morbi tempus bibendum magna, id laoreet ligula mollis eu. Donec placerat convallis venenatis. 
+        </p>
+        </div>
+      </section>
+      <section id="galeria">
+        <div class="container">
+          <span class="glyphicon glyphicon-chevron-down"></span>
+          <h1>Portfolio sztuki autora</h1>
+          <p class="bg-success">
+            Archiwum prac autorstwa WLOP.
+          </p>
+          <div class="row">
+            <div class="col-sm-4 kolka"><img src="kwad1.jpg" alt="obraz numer 1" class="center-block"></div>
+            <div class="col-sm-4 kolka"><img src="kwad2.jpg" alt="obraz numer 1" class="center-block"></div>
+            <div class="col-sm-4 kolka"><img src="kwad3.jpg" alt="obraz numer 1" class="center-block"></div>
+          </div>
+          <!--Laboratorium 6  Galeria zdjęć przez angulara-->
+          <div class="siatka" ng-controller="GalleryListCtrl">
+            <div class="row text-center">
+              <label>Szukaj: </label>
+              <p><input type="text" ng-model="query" class="form-control"><p>
+              <p ng-if="query"><b>Znalezione dla szukanej frazy:</b> {{query}}</p>
+              <span ng-if="query == null">
+                <p><b>Ilość obrazów:</b> {{galleries.length}}</p>
+              </span>
+              <label>Sortuj: </label>
+              <select ng-model="orderProp" class="form-control">
+                  <option value="title">Alfabetycznie</option>
+                  <option value="when">Chronologicznie</option>
+                  <option value="-when">Od Najnowszych</option>
+              </select>
+              <p ng-if="orderProp"><b>Obrazy ułożone:</b> {{orderProp}}</p>
+              <p></p>
+              <div class="col-sm-4" ng-repeat="gallery in galleries | filter: query | orderBy: orderProp">
+                <img src="{{gallery.thumbnailUrl}}">
+                <h3>{{gallery.title}}</h3>
+                <p><strong>Kiedy:</strong> {{gallery.when}}</p>
+                
+              </div>
+            </div>
+          </div>
+          <h3>Koniec galerii</h3>
+        </div>
+      </section>
+      <section id="kontakt">
+        <form action="indeks.html#kontakt" method=POST onsubmit="return checkForm();">
+          <span class="glyphicon glyphicon-sort"></span>
+          <fieldset>
+          <legend>Formularz kontaktowy</legend>
+          <div class="form-group">
+            <p id="errorName" class="hide">Podanie imienia jest wymagane!</p>
+          </div>
+          <label for="contactName">Imię</label> <input type="text" id="contactName" class="form-control" onchange="onchangeimie()" onblur="onblurimie()"/>
+          <div class="form-group">
+            <p id="errorSurName" class="hide">Podanie nazwiska jest wymagane!</p>
+          </div>
+          <label for="contactSurName">Nazwisko</label> <input type="text" id="contactSurName" class="form-control" onblur="onblurnazwisko()" onchange="onchangenazwisko()"/>
+          <div class="form-group">
+            <p id="errorEmail" class="hide">Podanie emaila jest wymagane!</p>
+            <p id="errorFormaEmail" class="hide">Zły format emaila!</p>
+          </div>
+          <label for="contactEmail">Email</label> <input type="text" id="contactEmail" class="form-control" onblur="onbluremail()" onchange="onchangeemail()"/>
+          <div class="form-group">
+            <p id="errorInformacja" class="hide">Podanie informacji o przyczynie kontaktu jest wymagane!</p>
+          </div>
+          <label for="contactInformacja">Informacja</label> <textarea id="contactInformacja" maxlength="250" class="form-control" onblur="onblurinformacja()" onchange="onchangeinformacja()"></textarea>
+
+          <button type="submit" class="btn btn-primary">Wyślij</button>
+          </fieldset>
+        </form>
+
+
+      </section>
+      <footer>
+        <div class="container">
+          <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal">
+            Polityka prywatności
+          </button>
+        </div>
+      </footer>
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <buttont type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></buttont>
+              <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+              <div class="modal-body">
+                Donec orci risus, semper vitae convallis sit amet, viverra eu dolor. Phasellus libero magna, molestie sit amet accumsan vitae, volutpat at felis. Vestibulum sollicitudin lacinia ultricies. Vivamus volutpat ipsum sit amet risus laoreet porta. Vestibulum congue dignissim sapien, finibus tempus urna congue at. Morbi tempus bibendum magna, id laoreet ligula mollis eu. Donec placerat convallis venenatis. 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+  </body>
+</html>
